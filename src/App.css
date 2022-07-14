@@ -1,38 +1,160 @@
-.App {
+.card {
+  flex-basis: calc(33% - 1rem);
+  margin-bottom: 2rem;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 5rem;
+}
+
+.pic img{
+  width: 42.5vmin;
+  height: 260px;
+  display: block;
+  padding: 5.4vmin;
+  background-color: rgb(236, 227, 227);
+}
+
+.watch-description{
+  display: inline-block;
+  padding: 3.7vmin;
+  background-color: antiquewhite;
+}
+
+.watch-description h3{
+  opacity: 0.6;
+}
+
+.watch-price{
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2.2vmin;
+}
+
+.watch-price span{
+  font-weight: bolder;
+  font-size: 3.89vmin;
+}
+
+
+.watch-price span sub{
+  font-weight: normal;
+  font-size: 2vmin;
+}
+
+.watch-descrip p{
+  margin: 0.8vmin;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6vmin;
+  border-top: 1px solid rgb(181, 164, 164);
+}
+
+.prices{
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-period{
+  margin-top: 4.99vmin;
+  /* text-align: center; */
+  margin-left: -1rem;
+}
+
+.time-period span{
+  border: 1px solid black;
+  padding: 2.2vmin;
+  margin: 2.2vmin;
+  border-radius: 4.2vmin;
+}
+
+#claim{
+  border-radius: 1.2vmin;
+  color: #fff;
+  background: #000;
+  font-weight: bolder;
+  font-size: 2.99vmin;
+}
+
+i{
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2.2vmin;
+  color: #fff;
+  background: #000;
+  font-weight: bolder;
+  font-size: 2.99vmin;
+}
+
+.buy-now{
+  margin-top: 4.3vmin;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buy-now button{
+  padding: 0.5rem 5rem;
+  border-radius: 4.3vmin;
+  color: green;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 3.5vmin;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.buy-now button:hover{
+  background-color: green;
+  color: yellow;
+}
+
+.card-description{
+  text-align: center;
+}
+
+.card-description a{
+  padding: 0.4rem 2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* 
+@media only screen and (min-width: 1101px){
+  .time-period{
+    margin-left: -2.4rem;
+  }
+  .pic img{
+    padding: 2.8vmin;
+  }
+}
+  
+
+@media only screen and (max-width: 1166px) {
+  .App{
+    flex-basis: calc(50% - 1rem);
+  }
+  .pic img{
+    padding: 3vmin;
+  }
+  
+
+  .time-period{
+    display: grid;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 660px) {
+  .App{
+    flex-basis: calc(100% - 1rem);
   }
-  to {
-    transform: rotate(360deg);
+
+  .time-period{
+    display: grid;
   }
-}
+} */
