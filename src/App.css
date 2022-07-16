@@ -4,10 +4,12 @@
 }
 
 .card-container{
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  gap : 2rem;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  margin: 0 5rem;
 }
 
 .pic img{

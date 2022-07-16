@@ -2,6 +2,11 @@ import "./App.css";
 import { Link } from "react-router-dom";
 
 function App() {
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("clicked");
+  };
+
   return (
     <div className="card-container">
       <Link to="/card">
@@ -40,7 +45,7 @@ function App() {
               <i>Days</i>
             </div>
             <div className="buy-now">
-              <button>Buy Now</button>
+              <button onClick={handleClick}>Buy Now</button>
             </div>
           </div>
         </div>
@@ -384,7 +389,6 @@ function App() {
           </div>
         </div>
       </Link>
-
     </div>
   );
 }
